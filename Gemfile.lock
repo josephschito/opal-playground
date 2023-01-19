@@ -1,0 +1,26 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ast (2.4.2)
+    opal (1.7.1)
+      ast (>= 2.3.0)
+      parser (~> 3.0, >= 3.0.3.2)
+    parser (3.2.0.0)
+      ast (~> 2.4.1)
+    rack (2.2.4)
+    webrick (1.7.0)
+
+PLATFORMS
+  arm64-darwin-21
+  arm64-darwin-22
+
+DEPENDENCIES
+  opal
+  rack
+  webrick
+
+RUBY VERSION
+   ruby 3.2.0p0
+
+BUNDLED WITH
+   2.3.26
