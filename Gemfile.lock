@@ -2,12 +2,20 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
+    cgi (0.3.6)
+    concurrent-ruby (1.1.10)
+    erb (4.0.2)
+      cgi (>= 0.3.3)
     opal (1.7.1)
       ast (>= 2.3.0)
       parser (~> 3.0, >= 3.0.3.2)
     parser (3.2.0.0)
       ast (~> 2.4.1)
     rack (2.2.4)
+    rake (13.0.6)
+    sprockets (4.1.1)
+      concurrent-ruby (~> 1.0)
+      rack (> 1, < 3)
     webrick (1.7.0)
 
 PLATFORMS
@@ -15,8 +23,11 @@ PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
+  erb
   opal
   rack
+  rake
+  sprockets
   webrick
 
 RUBY VERSION
