@@ -1,14 +1,24 @@
-### Development
-`cd opal-static-template`
+<h1 align="left">
+  Simple Opal <img src="https://secure.gravatar.com/avatar/88298620949a6534d403da2e356c9339?s=420"
+  align="center" title="Opal logo by Elia Schito" width="50" height="50" />
+  playground template  <br/>
+</h1>
 
-`bundle`
+### Setup
+**`cd opal-static-template`**
 
-`bundle exec rackup`
+**`bundle`**
 
-### Build
-`bundle exec rake`
+**`bundle exec rackup`**
 
-### Try your build
-`bundle exec ruby -rwebrick -e 'WEBrick::HTTPServer.new(:Port => 4001, :DocumentRoot => "./build").start' &> /dev/null`
+**Visit [`http://localhost:9292`](http://localhost:9292)**
 
-visit `http://localhost:4001`
+<!--
+  ### Build
+  `bundle exec rake`
+
+  ### Try your build
+  `bundle exec ruby -rwebrick -e 'WEBrick::HTTPServer.new(:Port => 4001, :DocumentRoot => "./build").start' &> /dev/null`
+
+  visit `http://localhost:4001`
+-->
