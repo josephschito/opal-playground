@@ -1,7 +1,6 @@
 <h1 align="left">
-  Simple Opal <img src="https://secure.gravatar.com/avatar/88298620949a6534d403da2e356c9339?s=420"
+  Opal playground <img src="https://secure.gravatar.com/avatar/88298620949a6534d403da2e356c9339?s=420"
   align="center" title="Opal logo by Elia Schito" width="50" height="50" />
-  playground template  <br/>
 </h1>
 
 ### Setup
