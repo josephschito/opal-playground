@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'bundler/setup'
+
+require 'fileutils'
+require 'opal'
+require 'erb'
+
+COMPILED_FILE_NAME = 'app.mjs'
+
+Opal.append_path "app"
+FileUtils.rm_rf('build') if Dir.exist?('build')
+Dir.mkdir('build')
+File.binwrite "build/#{COMPILED_FILE_NAME}", Opal::Builder.build("application").to_s
+
+def main = COMPILED_FILE_NAME
+def javascript_include_tag(main) = "<script src='#{main}' type='module'></script>"
+
+erb = ERB.new File.read( "app/index.html.erb" ), trim_mode: "<>"
+
+File.open('build/index.html', 'w') do |file|
+  file.write erb.result(binding)
+end
